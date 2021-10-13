@@ -5,7 +5,7 @@ int main() {
     int r;//r stands for radius
 	float pi, area, volume;
 	pi=3.142;//initialize the value for pi
-	printf("Enter the radius");//prompt the user to input the Radius
+	printf("Enter the radius\t");//prompt the user to input the Radius
 	scanf("%d", &r);//take the value for Radius
 	printf("\nArea of sphere=4*pi*r*r");//Display the formula for Area 
 	area=4*pi*r*r;//calculatenthe radius
