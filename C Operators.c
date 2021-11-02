@@ -4,7 +4,7 @@ int main()
 {
     /*Arithmetic Operators*/
     printf("Arithmetic Operators");
-    int a, b, Addition, Subtraction, Multiplication, Modulus;
+    int a, b, Addition, Subtraction, Multiplication, Modulus, Answer;
     float Division;
     printf("\n Enter value for a \t");
     scanf("%d", &a);
@@ -61,23 +61,28 @@ int main()
     }
     /*Logical operators*/
     printf("\n Logical Operators");
-    int m, n;
-    do{
-        printf("\n Enter value of m Between 1-10 \t");
+    int m, n, o, p, Result;
+    printf("\n Enter value of m \t");
     scanf("%d", &m);
-    printf("\n Enter value of n Between 1-10 \t");
+    printf("\n Enter value of n \t");
     scanf("%d", &n);
-    }
-    while ((m>10)||(n>10));
+    printf("\n Enter value of o \t");
+    scanf("%d", &o);
+    printf("\n Enter value of p \t");
+    scanf("%d", &p);
+    //Logical AND
     printf("\n Logical AND");
-    if ((m>=5)&&(m<=10)){
-        printf("\n m is a value between 5 and 10");
-    }else{
-        printf("\n m is less than 5");
-    }
-    printf("\n Logical OR");
-    if ((n>=5)||(n<=10)){
-        printf("\n n is simply equal to or less than 10");
-    }
+    Result = (m == n) && (o > p);
+    printf("\n (m == n) && (o > p) is %d", Result);
+    //Logical OR
+	printf("\n Logical OR");
+    Result = (m == n) || (o > p);
+    printf("\n (m == n) || (o > p) is %d", Result);
+    //Logical NOT
+	printf("\n Logical NOT");
+    Result = !(m != p);
+    printf("\n !(m != p) is %d", Result);
+    Result = !(o == n);
+    printf("\n !(o == n) is %d", Result);
     return 0;
 }
