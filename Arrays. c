@@ -1,0 +1,16 @@
+#include<studio.h>
+int main()
+{
+    int a[5];
+    int i
+    for (i=0; i<5; i++)
+    {
+        printf("\n Enter the elements of the array");
+        scanf("\n %d", a[]);
+    }
+    for (i=0; i<5; i++)
+    {
+        printf("\n a[%d]=%d", i, a[i]);
+    }
+    return 0;
+}
