@@ -1,12 +1,12 @@
-#include<studio.h>
+#include<stdio.h>
 int main()
 {
     int a[5];
-    int i
+    int i;
     for (i=0; i<5; i++)
     {
-        printf("\n Enter the elements of the array");
-        scanf("\n %d", a[]);
+        printf("\n Enter a[%d]", i);
+        scanf("\n %d", &a[i]);
     }
     for (i=0; i<5; i++)
     {
